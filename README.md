@@ -64,18 +64,18 @@ Multi-layer S2 has similar configuration as Multilayer S1. We don't need to show
 
 # Testing
 
-## 1. Testing DHCP
+### 1. Testing DHCP
 
 ![Testing DHCP](assets/testing_dhcp.png)
 
-## 2. Ping Testing
+### 2. Ping Testing
 ![Testing Ping](assets/testing_ping.png)
 
-## 3. Testing NAT
+### 3. Testing NAT
 
 ![Testing NAT](assets/testing_nat.png)
 
-## 4. Testing DNS
+### 4. Testing DNS
 
 ![Testing DNS](assets/testing_dns_1.png)
 ![Testing DNS](assets/testing_dns_2.png)
