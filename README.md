@@ -27,5 +27,8 @@ An enterprise company has hired you to set up a LAN for their new headquarters i
 - Ports between multi-layer switches and 2960 model switches configured as trunk ports.
 - Ports between 2960 model switches and end-devices configured as access ports.
 - Access Point has a password on WPA2-PSK Authentication. Since smart phone in public relations department doesn’t have correct password, it’s not connected to the wireless network.
+- DHCP server is configured to provide IP addresses to all devices in the network.
+- DNS server is configured to provide DNS services to all devices in the network.
+
 
 <b> ** For more information about the project, please check the [Project Report](report.pdf).</b>
