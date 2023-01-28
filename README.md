@@ -18,11 +18,11 @@ An enterprise company has hired you to set up a LAN for their new headquarters i
 11. Configure NAT on core router.
 
 # Implementation
-## Subnetting
+## 1. Subnetting
 
 ![Subnetting](assets/subnetting.png)
 
-## Topology
+## 2. Topology
 
 ![Topology](assets/topology.png)
 
@@ -33,7 +33,7 @@ An enterprise company has hired you to set up a LAN for their new headquarters i
 - Ports between 2960 model switches and end-devices configured as access ports.
 - Access Point has a password on WPA2-PSK Authentication. Since smart phone in public relations department doesn’t have correct password, it’s not connected to the wireless network.
 
-## Configurations
+## 3. Configurations
 
 ### ISP Router Configuration
 
@@ -64,18 +64,18 @@ Multi-layer S2 has similar configuration as Multilayer S1. We don't need to show
 
 # Testing
 
-### Testing DHCP
+## 1. Testing DHCP
 
 ![Testing DHCP](assets/testing_dhcp.png)
 
-### Ping Testing
+## 2. Ping Testing
 ![Testing Ping](assets/testing_ping.png)
 
-### Testing NAT
+## 3. Testing NAT
 
 ![Testing NAT](assets/testing_nat.png)
 
-### Testing DNS
+## 4. Testing DNS
 
 ![Testing DNS](assets/testing_dns_1.png)
 ![Testing DNS](assets/testing_dns_2.png)
