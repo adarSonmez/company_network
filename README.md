@@ -1,7 +1,7 @@
 ﻿
 # 🖧 Company Network Project in Cisco Packet Tracer
 
-# Description
+## Description
 
 An enterprise company has hired you to set up a LAN for their new headquarters in Krakow. The following are the requirements for the Network you will establish in the new building.
 
@@ -17,12 +17,7 @@ An enterprise company has hired you to set up a LAN for their new headquarters i
 10. Use OSPF as the routing protocol to advertise routes between routers and multilayer switches.
 11. Configure NAT on core router.
 
-# Implementation
-## 1. Subnetting
-
-![Subnetting](assets/subnetting.png)
-
-## 2. Topology
+## Implementation
 
 ![Topology](assets/topology.png)
 
@@ -33,49 +28,4 @@ An enterprise company has hired you to set up a LAN for their new headquarters i
 - Ports between 2960 model switches and end-devices configured as access ports.
 - Access Point has a password on WPA2-PSK Authentication. Since smart phone in public relations department doesn’t have correct password, it’s not connected to the wireless network.
 
-## 3. Configurations
-
-### ISP Router Configuration
-
-![ISP Router Configuration](assets/config_isp_router.png)
-
-### Core Router Configuration
-
-![Core Router IP Configuration](assets/config_core_router_ip.png)
-
-![Core Router NAT Configuration](assets/config_core_router_nat.png)
-
-### Multi-Layer Switches Configuration
-![Configuring Multi-Layer Switches Ports](assets/config_ms_ports.png)
-
-![Configuring Multi-Layer Switches VLANs](assets/config_ms_vlans.png)
-
-![Configuring Multi-Layer Switches OSPF](assets/config_ms_ospf.png)
-
-Multi-layer S2 has similar configuration as Multilayer S1. We don't need to show all the configurations again for Multilayer S2.
-
-### Layer 2 Switches Configuration
-
-![Configuring Layer 2 Switches Ports](assets/config_layer2_switch.png)
-
-### DHCP Server Configuration
-
-![DHCP Server Pool Configuration](assets/dhcp_server_pool.png)
-
-# Testing
-
-### 1. Testing DHCP
-
-![Testing DHCP](assets/testing_dhcp.png)
-
-### 2. Ping Testing
-![Testing Ping](assets/testing_ping.png)
-
-### 3. Testing NAT
-
-![Testing NAT](assets/testing_nat.png)
-
-### 4. Testing DNS
-
-![Testing DNS](assets/testing_dns_1.png)
-![Testing DNS](assets/testing_dns_2.png)
+<b> ** For more information about the project, please check the [Project Report](report.pdf).</b>
