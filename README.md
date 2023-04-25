@@ -32,3 +32,5 @@ An enterprise company has hired you to set up a LAN for their new headquarters i
 
 
 <b> ** For more information about the project, please check the [Project Report](report.pdf).</b>
+
+- Adar Sönmez
