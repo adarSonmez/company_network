@@ -1,34 +1,80 @@
-﻿
 # 🖧 Company Network Project in Cisco Packet Tracer
 
 ## Description
 
-An enterprise company has hired you to set up a LAN for their new headquarters in Krakow. The following are the requirements for the Network you will establish in the new building.
+An enterprise company has hired you to set up a LAN for their new headquarters in Krakow. The following are the requirements and the solution implemented for the network in the new building:
 
-1. Use Cisco Packet Tracer to implement solution.
-2. The network address that the company allocated is 192.168.1.0/20
-3. Various departments work on each floor of the 4-storey building. Each of these departments will have different VLANs and different subnetworks.
-4. On the third floor, there will be a wireless access point to which a maximum of 1000 devices can be connected.
-5. There should be a core router connected to the ISP, and two multilayer switches connected to this core router.
-6. Devices in all departments are required to communicate with each other with the respective multilayer switch configured for inter-VLAN routing.
-7. The multilayer switches are expected to carry out both routing and switching.
-7. All devices in the network are expected to obtain an IP address dynamically from the DHCP server located at server room.
-9. Devices in the server room are to be allocated IP addresses statically.
-10. Use OSPF as the routing protocol to advertise routes between routers and multilayer switches.
-11. Configure NAT on core router.
+1. **Cisco Packet Tracer Implementation:**  
+   The entire network topology and configuration are created and simulated in Cisco Packet Tracer.
 
-## Implementation
+2. **IP Addressing:**  
+   The company has allocated the network address `192.168.1.0/20` for the headquarters.
+
+3. **Building Structure & VLANs:**  
+   - The building consists of **4 floors**.
+   - Each department operates on a separate floor and is assigned a unique VLAN and subnet.
+   - VLANs are used to logically segment the network by department.
+
+4. **Wireless Connectivity:**  
+   - The third floor features a **wireless access point** supporting up to 1000 devices.
+   - WPA2-PSK authentication is configured; only devices with the correct password can connect.
+
+5. **Core Routing & Switching:**  
+   - A **core router** connects the LAN to the ISP.
+   - **Two multilayer switches** are connected to the core router.
+   - **Inter-VLAN Routing** is configured on the multilayer switches to allow communication between departments.
+
+6. **Switching Architecture:**  
+   - Multilayer switches perform both routing and switching.
+   - Trunk ports are configured between multilayer switches and 2960 model switches.
+   - Access ports are configured between 2960 switches and end-devices.
+
+7. **IP Address Management:**  
+   - All devices obtain their IP addresses dynamically from a **DHCP server** located in the server room.
+   - Devices in the server room have **static IP addresses**.
+
+8. **Routing Protocol:**  
+   - **OSPF** (Open Shortest Path First) is used for routing between routers and multilayer switches.
+   - OSPF ensures efficient route advertisement and redundancy.
+
+9. **Network Address Translation:**  
+   - **NAT** is configured on the core router to enable internet access for internal devices.
+
+10. **Additional Services:**  
+    - **DNS server** provides name resolution for all devices.
+    - **Security** is ensured via VLAN segmentation, WPA2 wireless authentication, and static IP allocation for critical systems.
+
+---
+
+## 🖼️ Topology
 
 ![Topology](assets/topology.png)
 
-- OSPF used as routing protocol on the routers and multi-layer switches.
-- NAT configured on core router.
-- Multi-layer switches configured for inter-VLAN routing.
-- Ports between multi-layer switches and 2960 model switches configured as trunk ports.
-- Ports between 2960 model switches and end-devices configured as access ports.
-- Access Point has a password on WPA2-PSK Authentication. Since smart phone in public relations department doesn’t have correct password, it’s not connected to the wireless network.
-- DHCP server is configured to provide IP addresses to all devices in the network.
-- DNS server is configured to provide DNS services to all devices in the network.
+---
 
+## Implementation Details
 
-<b> ** For more information about the project, please check the [Project Report](report.pdf).</b>
+- **OSPF** is used as the routing protocol on all routers and multilayer switches.
+- **NAT** is implemented on the core router for outside connectivity.
+- **Inter-VLAN Routing** is set up on multilayer switches for internal communication.
+- **DHCP server** automatically provides IP addresses to all devices except those in the server room (which use static IPs).
+- **DNS server** is configured for all devices.
+- **Trunk ports** are set up for switch-to-switch connections; **access ports** are set for end-device connections.
+- **Wireless access point** configured for high device capacity and security.
+- **VLANs** established for each department, ensuring traffic isolation and management.
+- **Redundancy** and **scalability** considered in design.
+
+---
+
+## 📄 Documentation
+
+**For more information about the project, detailed configuration steps, and design rationale, please check the [Project Report](report.pdf).**
+
+---
+
+## Author
+
+**Adar Sönmez**  
+[GitHub Profile](https://github.com/adarSonmez)
+
+---
